@@ -7,7 +7,7 @@
  */
 var merge = function(nums1, m, nums2, n) {
    for(let i=0;i<nums1.length;i++){
-        if(i>=m && nums2.length!=0){
+        if(i>=m){
             nums1[i]=nums2[i-m];
         }
    }
