@@ -29,9 +29,8 @@ MinStack.prototype.top = function() {
  * @return {number}
  */
 MinStack.prototype.getMin = function() {
-    return Math.min(...this.stack);
-};
-
+    return this.stack.reduce((a, b)=> a > b ? b : a);
+}
 /** 
  * Your MinStack object will be instantiated and called as such:
  * var obj = new MinStack()
