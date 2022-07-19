@@ -7,10 +7,8 @@ var findRelativeRanks = function(score) {
     let arr = [...score];
     let result =[];
     arr.sort((a,b)=>b-a);
-    console.log(arr, score);
     for(let i=0;i<arr.length;i++){
         let idx = score.indexOf(arr[i]);
-        console.log('id-',idx);
         if(i<3) result[idx] = rank[i];
         else result[idx]=String(i+1);
     }
