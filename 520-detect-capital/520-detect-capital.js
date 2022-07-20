@@ -16,5 +16,6 @@ var detectCapitalUse = function(word) {
              capitalStatus = true;
         }
     }
-    return capitalCount <= 1 ||  !capitalStatus;
+    console.log(capitalCount);
+    return capitalCount <= 1 || !capitalStatus;
 };
