@@ -14,7 +14,6 @@ var calPoints = function(ops) {
         } else{
             result.push(Number(ops[i]));
         }
-        console.log(result);
     }
     if(result.length===0) return 0;
     else{
