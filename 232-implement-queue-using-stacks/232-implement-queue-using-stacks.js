@@ -8,7 +8,6 @@ var MyQueue = function() {
  * @return {void}
  */
 MyQueue.prototype.push = function(x) {
-    console.log(x);
     this.heap.push(x);
 };
 
