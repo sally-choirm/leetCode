@@ -3,8 +3,8 @@
  * @return {void} Do not return anything, modify matrix in-place instead.
  */
 var setZeroes = function(matrix) {
-        const check = [];
-
+    const check=Array(matrix.length).fill(false).map(()=>new Array(matrix[0].length));
+    console.log('chch--',check);
     function change(x,y){
         for(let j=0;j<matrix[x].length;j++){
             if(matrix[x][j]!==0) {
@@ -14,19 +14,19 @@ var setZeroes = function(matrix) {
         }
         
        for(let j=0;j<matrix.length;j++){
-          console.log(matrix[j][y]);
            if(matrix[j][y]!==0) {
                matrix[j][y]=0;   
                check[j][y]=true;
             }                 
         }
     }
-    for(let i=0;i<matrix.length;i++){
-        check[i]=[];
-      for(let j=0;j<matrix[i].length;j++){
-          check[i][j]=false;
-      }
-    }
+    // for(let i=0;i<matrix.length;i++){
+    //     check[i]=[];
+    //   for(let j=0;j<matrix[i].length;j++){
+    //       check[i][j]=false;
+    //   }
+    // }
+    
     
     for(let i=0;i<matrix.length;i++){
       for(let j=0;j<matrix[i].length;j++){
