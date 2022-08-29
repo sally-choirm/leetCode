@@ -3,7 +3,9 @@
  * @return {void} Do not return anything, modify matrix in-place instead.
  */
 var setZeroes = function(matrix) {
-    const check=Array(matrix.length).fill(false).map(()=>new Array(matrix[0].length));
+    //2차원 배열 [[false,false,false],[false,false,false],[false,false,false]]
+    const check=Array(matrix.length).fill(false).map(()=>new Array(matrix[0].length)); 
+  
     function change(x,y){
         for(let j=0;j<matrix[x].length;j++){
             if(matrix[x][j]!==0) {
