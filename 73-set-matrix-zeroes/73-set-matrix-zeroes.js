@@ -4,7 +4,6 @@
  */
 var setZeroes = function(matrix) {
     const check=Array(matrix.length).fill(false).map(()=>new Array(matrix[0].length));
-    console.log('chch--',check);
     function change(x,y){
         for(let j=0;j<matrix[x].length;j++){
             if(matrix[x][j]!==0) {
@@ -20,14 +19,7 @@ var setZeroes = function(matrix) {
             }                 
         }
     }
-    // for(let i=0;i<matrix.length;i++){
-    //     check[i]=[];
-    //   for(let j=0;j<matrix[i].length;j++){
-    //       check[i][j]=false;
-    //   }
-    // }
-    
-    
+  
     for(let i=0;i<matrix.length;i++){
       for(let j=0;j<matrix[i].length;j++){
           if(!check[i][j] && matrix[i][j]===0){
