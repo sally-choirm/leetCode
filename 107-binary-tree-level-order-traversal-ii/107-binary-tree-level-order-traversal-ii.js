@@ -14,7 +14,7 @@ var levelOrderBottom = function(root) {
     let queue = [root];
     let result =[];
     if(!root) return result;
-    console.log(root);
+    
     while(queue.length>0){
         let a =[];
         let n = queue.length;
