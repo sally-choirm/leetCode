@@ -18,7 +18,6 @@ var numIslands = function(grid) {
 
             if(xx<0 || xx>grid.length-1 || yy<0 || yy>grid[0].length-1) continue;
             if(grid[xx][yy]==='1' && !check[xx][yy]){
-
                 check[xx][yy]=true;
                 queue.push([xx,yy]);
             }
@@ -30,8 +29,6 @@ var numIslands = function(grid) {
         for(let j=0;j<grid[i].length;j++){
             if(grid[i][j]==='1' && !check[i][j]){
                 queue.push([i,j]);
-                                console.log(i,j);
-
                 check[i][j]=true;
                 bfs();
                 island++;
