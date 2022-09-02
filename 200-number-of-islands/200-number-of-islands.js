@@ -4,8 +4,8 @@
  */
 var numIslands = function(grid) {
     let check = Array.from(Array(grid.length), () => new Array(grid[0].length).fill(false));
-    let dx = [0,-1,0,1];
-    let dy = [1,0,-1,0];
+    let dx = [0,0,1,-1];
+    let dy = [1,-1,0,0];
     let island=0;
     let queue=[];
     
@@ -15,7 +15,6 @@ var numIslands = function(grid) {
         for(let i=0;i<4;i++){
             let xx = x+dx[i];
             let yy = y+dy[i];
-
             if(xx<0 || xx>grid.length-1 || yy<0 || yy>grid[0].length-1) continue;
             if(grid[xx][yy]==='1' && !check[xx][yy]){
                 check[xx][yy]=true;
