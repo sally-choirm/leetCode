@@ -12,7 +12,6 @@
  */
 var binaryTreePaths = function(root) {
 
-    if(!root) return [];
     const output = [];
     
     const dfs = (root, path='') => {
