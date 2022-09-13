@@ -11,7 +11,7 @@
  * @return {number}
  */
 var findSecondMinimumValue = function(root) {
-  if(!root) return -1;
+    if(!root) return -1;
     const min1 = root.val;
     let min2 = Infinity;
     const stack = [root];
