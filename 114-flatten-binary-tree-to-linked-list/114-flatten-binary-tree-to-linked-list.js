@@ -15,7 +15,7 @@ var flatten = function(root) {
     
     let dfs = (node) => {
         if(!node) return node;
-        
+        console.log(node);
         dfs(node.right);
         dfs(node.left);
         node.right = next;
